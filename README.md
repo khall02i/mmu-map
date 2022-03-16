@@ -4,7 +4,7 @@ A web application for finding the path and distance between two points in John D
 
 # Using this repository
 
-- We'll be using Javascript or Typescript, and I think [VS Code](https://code.visualstudio.com) is the best editor for that.
+- We'll be using Javascript, and I think [VS Code](https://code.visualstudio.com) is the best editor for that.
 - You'll need to install Git.
 - You can use the VSCode Git sidebar item to do all your git stuff. Use that to clone this respository.
 - How to actually run the web app locally isn't sorted out yet (to test your changes).
