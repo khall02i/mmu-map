@@ -37,7 +37,11 @@ function d(name, important, connections) {
 	}
 }
 
-export const datapoints = [];
+export const datapoints = [
+	d("Room A", true, { "Hallway A": 0.5 }),
+	d("Hallway A", false, { "Room B": 10, "Room A": 0.5 }),
+	d("Room B", true, { "Hallway A": 10 })
+];
 
 export const datapointMap = new Map(
 	datapoints.map(e => [e.name, e])
