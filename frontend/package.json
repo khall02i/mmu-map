@@ -22,6 +22,7 @@
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "node-dijkstra": "^2.5.0",
     "prettier": "^2.6.0",
     "sirv-cli": "^2.0.0"
   }
