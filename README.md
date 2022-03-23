@@ -9,7 +9,7 @@ A web application for finding the path and distance between two points in John D
 - You can use the VSCode Git sidebar item to do all your git stuff. Use that to clone this respository.
 - You'll need [Node JS](https://nodejs.org/en/).
 - Using VSCode, you can hit Ctrl+J to open a terminal. With that terminal open, you can type `cd frontend` to move into the frontend folder.
-- Use `npm install` to install the web server and stuff.
+- Use `npx pnpm install` to install the web server and stuff.
 - Use `npm run dev` to run a development server. 
 
 
