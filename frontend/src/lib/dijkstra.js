@@ -13,5 +13,5 @@ for (const datapoint of datapoints) {
  * and the distance in meters under cost.
  */
 export function PathBetween(node1, node2) {
-	return route.path(node1, node2, {cost: true});
+	return route.path(node1, node2, { cost: true });
 }
