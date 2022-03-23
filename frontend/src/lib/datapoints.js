@@ -14,31 +14,22 @@ const exampleDatapoint = {
 	// Important locations would be things like rooms or entrances.
 	important: true,
 
-	// an array of nodes this point is connected to.
+	// a map of nodes this point is connected to.
 	// Also contains the distance between the two points in meters.
-	connections: [
-		{ name: "1st_floor_hallway_01", dist: 1 },
-		{ name: "1st_floor_hallway_03", dist: 1 },
-	],
+	connections: {
+		"1st_floor_hallway_01": 1,
+		"1st_floor_hallway_03": 1,
+	},
 };
-
-/**
- * Utility function for defining a connection.
- * @param {string} name - The name of the node this node is connected to.
- * @param {number} dist - How far away this node is.
- */
-function c(name, dist) {
-	return { name, dist };
-}
 
 /**
  * Utility function for defining a datapoint.
  *
  * @param {string} name - The name for this datapoint.
  * @param {boolean} important - Whether this datapoint is important or not.
- * @param {...connections} connections - The rest of the arguments are { name, dist } objects.
+ * @param connections - An object of name -> dist mappings.
  */
-function d(name, important, ...connections) {
+function d(name, important, connections) {
 	return {
 		name,
 		important,
@@ -46,4 +37,8 @@ function d(name, important, ...connections) {
 	}
 }
 
-const datapoints = [];
+export const datapoints = [];
+
+export const datapointMap = new Map(
+	datapoints.map(e => [e.name, e])
+);
