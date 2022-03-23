@@ -1,6 +1,8 @@
 <script>
+	import Head from "./Head.svelte";
 </script>
 
+<Head />
 <main>
 	<h1>John Dalton Map</h1>
 </main>
