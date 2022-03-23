@@ -2,7 +2,7 @@
 </script>
 
 <main>
-	<h1>MMU Map!</h1>
+	<h1>John Dalton Map</h1>
 </main>
 
 <style>
