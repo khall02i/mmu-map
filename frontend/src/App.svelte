@@ -3,6 +3,7 @@
 	import MapComponent from "./components/MapComponent.svelte";
 	import { datapoints } from "./lib/datapoints";
 	import { PathBetween } from "./lib/dijkstra";
+	import RouteRenderer from "./components/RouteRenderer.svelte";
 
 	let node1;
 	let node2;
@@ -22,9 +23,7 @@
 	{#if node1 && node2}
 		<hr />
 
-		<code>
-			{JSON.stringify(PathBetween(node1, node2), null, "\t")}
-		</code>
+		<RouteRenderer {node1} {node2} />
 	{/if}
 	<hr />
 
