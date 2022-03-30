@@ -1,5 +1,6 @@
 <script>
 	import NodeSelector from "./components/NodeSelector.svelte";
+	import MapComponent from "./components/MapComponent.svelte";
 	import { datapoints } from "./lib/datapoints";
 	import { PathBetween } from "./lib/dijkstra";
 
@@ -14,10 +15,10 @@
 <main>
 	<h1>John Dalton Map</h1>
 
-	Point A:
+	Take me from
 	<NodeSelector nodeNames={importantNodeNames} bind:selectedValue={node1} />
 
-	Point B:
+	to
 	<NodeSelector nodeNames={importantNodeNames} bind:selectedValue={node2} />
 
 	{#if node1 && node2}
@@ -27,6 +28,9 @@
 			{JSON.stringify(PathBetween(node1, node2), null, "\t")}
 		</code>
 	{/if}
+	<hr />
+
+	<MapComponent />
 </main>
 
 <style>
