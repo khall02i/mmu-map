@@ -17,6 +17,7 @@ function d(name, important, position, connections) {
 	return {
 		name,
 		important,
+		position,
 		connections,
 	};
 }
