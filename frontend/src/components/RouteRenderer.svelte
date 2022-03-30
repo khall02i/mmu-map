@@ -8,5 +8,5 @@
 </script>
 
 <code>
-	{JSON.stringify(PathBetween(node1, node2), null, "\t")}
+	{JSON.stringify(path, null, "\t")}
 </code>
