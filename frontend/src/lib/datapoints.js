@@ -1,14 +1,19 @@
 // This file contains the datapoints for the map.
 // Datapoints look like this.
 
+function p(floor, xPos, yPos) {
+	return { floor, x: xPos, y: yPos };
+}
+
 /**
  * Utility function for defining a datapoint.
  *
  * @param {string} name - The name for this datapoint.
  * @param {boolean} important - Whether this datapoint is important or not.
+ * @param {Position} position - Where this point should be rendered visually.
  * @param connections - An object of name -> dist mappings.
  */
-function d(name, important, connections) {
+function d(name, important, position, connections) {
 	return {
 		name,
 		important,
@@ -29,6 +34,9 @@ const _exampleDatapoint = d(
 	// hallways.
 	// Important locations would be things like rooms or entrances.
 	true,
+	// Where this node should visually be drawn on the maps.
+	// this is FLOOR, X, Y.
+	p(1, 10, 20),
 	// a map of nodes this point is connected to.
 	// Also contains the distance between the two points in meters.
 	{
