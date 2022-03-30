@@ -4,7 +4,7 @@
 
 <div class="map-container">
 	<div class="floor-select">
-		Floor:
+		Map Floor:
 		<select bind:value={floor}>
 			<option value={0}>Ground Floor</option>
 			<option value={1}>1st Floor</option>
@@ -14,7 +14,12 @@
 	</div>
 	<hr />
 	<div class="map-img-container">
-		<img src={"/maps/" + floor + ".svg"} alt="A map of MMU" />
+		<img
+			src={"/maps/" + floor + ".svg"}
+			alt="A map of MMU"
+			height={1000}
+			width={1000}
+		/>
 	</div>
 </div>
 

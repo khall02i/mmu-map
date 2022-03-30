@@ -7,19 +7,17 @@
 	let node1;
 	let node2;
 
-	const importantNodeNames = datapoints
-		.filter((e) => e.important)
-		.map((e) => e.name);
+	const importantNodes = datapoints.filter((e) => e.important);
 </script>
 
 <main>
 	<h1>John Dalton Map</h1>
 
 	Take me from
-	<NodeSelector nodeNames={importantNodeNames} bind:selectedValue={node1} />
+	<NodeSelector nodes={importantNodes} bind:selectedValue={node1} />
 
 	to
-	<NodeSelector nodeNames={importantNodeNames} bind:selectedValue={node2} />
+	<NodeSelector nodes={importantNodes} bind:selectedValue={node2} />
 
 	{#if node1 && node2}
 		<hr />
@@ -30,15 +28,21 @@
 	{/if}
 	<hr />
 
-	<MapComponent />
+	<section>
+		<MapComponent />
+	</section>
+
+	<hr />
+	<footer>(c) 2022 Team 1Indigo</footer>
 </main>
 
 <style>
 	main {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
+		min-height: 100%;
+		margin-bottom: -30px;
 	}
 
 	h1 {
@@ -46,6 +50,10 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+	}
+
+	footer {
+		position: sticky;
 	}
 
 	@media (min-width: 640px) {
