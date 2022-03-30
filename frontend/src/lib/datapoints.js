@@ -46,9 +46,9 @@ const _exampleDatapoint = d(
 );
 
 export const datapoints = [
-	d("Room A", true, { "Hallway A": 0.5 }),
-	d("Hallway A", false, { "Room B": 10, "Room A": 0.5 }),
-	d("Room B", true, { "Hallway A": 10 }),
+	d("Room A", true, p(0, 10, 25), { "Hallway A": 0.5 }),
+	d("Hallway A", false, p(0, 20, 25), { "Room B": 10, "Room A": 0.5 }),
+	d("Room B", true, p(0, 30, 25), { "Hallway A": 10 }),
 ];
 
 export const datapointMap = new Map(datapoints.map((e) => [e.name, e]));
