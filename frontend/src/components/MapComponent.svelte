@@ -1,5 +1,11 @@
 <script>
 	let floor = 0;
+
+	import svgPanZoom from "svg-pan-zoom";
+
+	function applyZoom() {
+		svgPanZoom("#map");
+	}
 </script>
 
 <div class="map-container">
@@ -14,9 +20,11 @@
 	</div>
 	<hr />
 	<div class="map-img-container">
-		<img
-			src={"/maps/" + floor + ".svg"}
-			alt="A map of MMU"
+		<object
+			on:load={() => applyZoom()}
+			id="map"
+			data={"/maps/" + floor + ".svg"}
+			title="A map of MMU"
 			height={1000}
 			width={1000}
 		/>
