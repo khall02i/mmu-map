@@ -4,7 +4,7 @@
 	export let node1;
 	export let node2;
 
-	const path = PathBetween(node1, node2);
+	$: path = PathBetween(node1, node2);
 </script>
 
 <code>
