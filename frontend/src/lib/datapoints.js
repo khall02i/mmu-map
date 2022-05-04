@@ -47,9 +47,64 @@ const _exampleDatapoint = d(
 );
 
 export const datapoints = [
-	d("Room A", true, p(0, 10, 25), { "Hallway A": 0.5 }),
-	d("Hallway A", false, p(0, 20, 25), { "Room B": 10, "Room A": 0.5 }),
-	d("Room B", true, p(0, 30, 25), { "Hallway A": 10 }),
+	d("Cafe Stairs", true, p(0, 0, 0), { "Doorway A": 3 }),
+	d("Doorway A", true, p(0, 0, 0), { "Cafe Stairs": 3, "Hallway A": 2 }),
+	d("Hallway A", false, p(0, 0, 0), {
+		"Doorway A": 3,
+		"Room E145": 0.01,
+		"Room E127": 0.01,
+		"Hallway B": 2,
+	}),
+	d("Room E145", true, p(0, 0, 0), { "Hallway A": 0.01 }),
+	d("Room E127", true, p(0, 0, 0), { "Hallway A": 0.01 }),
+	d("Hallway B", false, p(0, 0, 0), {
+		"Hallway A": 2,
+		"Room E128": 0.01,
+		"Hallway C": 2,
+	}),
+	d("Room E128", true, p(0, 0, 0), { "Hallway B": 0.01 }),
+	d("Hallway C", false, p(0, 0, 0), {
+		"Hallway B": 2,
+		"Room E129": 0.01,
+		"Hallway D": 3,
+	}),
+	d("Room E129", true, p(0, 0, 0), { "Hallway C": 0.01 }),
+	d("Hallway D", false, p(0, 0, 0), {
+		"Hallway C": 3,
+		"Room E130": 0.01,
+		"Room E143": 0.01,
+		"Hallway E": 3,
+	}),
+	d("Room E130", true, p(0, 0, 0), { "Hallway D": 0.01 }),
+	d("Room E143", true, p(0, 0, 0), { "Hallway D": 0.01 }),
+	d("Hallway E", false, p(0, 0, 0), {
+		"Hallway D": 3,
+		"Room E131": 0.01,
+		"Hallway F": 2,
+	}),
+	d("Room E131", true, p(0, 0, 0), { "Hallway E": 0.01 }),
+	d("Hallway F", false, p(0, 0, 0), {
+		"Hallway E": 2,
+		"Room E132": 0.01,
+		"Hallway G": 6,
+	}),
+	d("Room E132", true, p(0, 0, 0), { "Hallway F": 0.01 }),
+	d("Hallway G", false, p(0, 0, 0), {
+		"Hallway F": 6,
+		"Room E142": 0.01,
+		"Hallway H": 2,
+	}),
+	d("Room E142", true, p(0, 0, 0), { "Hallway G": 0.01 }),
+	d("Hallway H", false, p(0, 0, 0), {
+		"Hallway G": 2,
+		"Room E133": 0.01,
+		"Hallway I": 2,
+		"Hallway I": 6,
+	}),
+	d("Room E133", true, p(0, 0, 0), { "Hallway H": 0.01 }),
+	d("Hallway I", false, p(0, 0, 0), { "Hallway H": 2, "Doorway B": 3 }),
+	d("Doorway B", true, p(0, 0, 0), { "Room E136": 0.01, "Hallway J": 3 }),
+	d("Room E136", true, p(0, 0, 0), { "Doorway B": 0.01 }),
 ];
 
 export const datapointMap = new Map(datapoints.map((e) => [e.name, e]));

@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@rollup/plugin-commonjs': ^17.0.0
@@ -20,7 +20,7 @@ specifiers:
 dependencies:
   eslint: 8.11.0
   eslint-config-prettier: 8.5.0_eslint@8.11.0
-  eslint-plugin-prettier: 4.0.0_68edcf5670f37721baf5d2cac6124e4d
+  eslint-plugin-prettier: 4.0.0_ndw46vtq6n3sdoxv2lfmmesoju
   node-dijkstra: 2.5.0
   prettier: 2.6.0
   sirv-cli: 2.0.2
@@ -32,7 +32,7 @@ devDependencies:
   rollup: 2.70.1
   rollup-plugin-css-only: 3.1.0_rollup@2.70.1
   rollup-plugin-livereload: 2.0.5
-  rollup-plugin-svelte: 7.1.0_rollup@2.70.1+svelte@3.46.4
+  rollup-plugin-svelte: 7.1.0_sl4ttkjqedaitosc6sac4fewwq
   rollup-plugin-terser: 7.0.2_rollup@2.70.1
   svelte: 3.46.4
 
@@ -377,7 +377,7 @@ packages:
       eslint: 8.11.0
     dev: false
 
-  /eslint-plugin-prettier/4.0.0_68edcf5670f37721baf5d2cac6124e4d:
+  /eslint-plugin-prettier/4.0.0_ndw46vtq6n3sdoxv2lfmmesoju:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -935,7 +935,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.70.1+svelte@3.46.4:
+  /rollup-plugin-svelte/7.1.0_sl4ttkjqedaitosc6sac4fewwq:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
