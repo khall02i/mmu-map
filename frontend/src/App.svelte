@@ -23,7 +23,7 @@
 	{#if node1 && node2}
 		<hr />
 
-		<RouteRenderer {node1} {node2} />
+		<RouteRenderer bind:node1 bind:node2 />
 	{/if}
 	<hr />
 

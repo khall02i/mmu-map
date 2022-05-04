@@ -1,5 +1,5 @@
 <script>
-	let floor = 0;
+	let floor = 1;
 
 	import svgPanZoom from "svg-pan-zoom";
 
